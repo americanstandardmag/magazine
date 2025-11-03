@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Website title: appears on tab-->
+    <title>American Standard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /*button styling for "American Standard" text - return to home page*/
+        /*EDIT: can change text color, button color, background, font, etc.*/
+        .homeButton
+        {
+            background-color: #fafae8;
+            border: none;
+            color: #32373b;
+            padding: 15px 32px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            font-size: 26px;
+            margin: auto;
+            display:block;
+            cursor: pointer;
+        }
+        /*button styling for row buttons: changes with resolution of device*/
+        /*EDIT: can change color, text color, font, etc.*/
+        .button 
+        {
+            background-color: #73aede;
+            border: none;
+            color: #32373b;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            font-size: 16px;
+            margin: auto;
+            cursor: pointer;
+        }
+        /*"column" styling: how to place objects in a column*/     
+        .column 
+        {
+            width: 40%;
+            padding: 5px;
+        }
+        .row::after 
+        {
+            content: "";
+            clear: both;
+            display: table;
+        }  
+        /*responsive layout - if resolution changes, so does column size*/  
+        @media screen and (max-width: 500px) 
+        {
+            .column 
+            {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+
+
+<body style="background-color:#fafae8; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+    <!--home button and button row creation -->
+    <a href="index.html" class="homeButton">American Standard</a>
+    <!--line break to slightly separate home button from row-->
+    <br>
+    <!--row creation-->
+    <div class="button">
+        <a href="mag.html" class="button">Magazine</a>
+        <a href="pol.html" class="button">Politics</a>
+        <a href="glob.html" class="button">Global</a>
+        <a href="cult.html" class="button">Culture</a>
+        <!--
+        WHEN ADDING PODCAST PAGE, ADD THIS REF
+        <a href="pod.html" class="button">Podcast</a>
+        -->
+        <a href="abt.html" class="button">About</a>
+    </div>
+    <style>
+        h2 {text-align: center;border: 3px solid #73AD21;}
+        img {border: 3px solid #73AD21;}
+        h3 {text-align: center;border: 3px solid #73AD21;}
+    </style>
+    
+    <!--copy pasted past mag to get what i want to look like-->
+     <div style="margin: auto;border: 3px solid black;">
+       <div style="display: flex;border:3px solid blue;">
+                <img  src="placeholder_mag.PNG"
+                    width="350px"
+                    height="600px"
+                    style="padding: 5px;margin-left: 20%;"
+                    class="block">
+                <div class="container" style="display: inline-block;border:3px solid blue;width:50%;margin:auto;">
+                    <div class="column" style="display: inline-block;border: 3px solid red;">
+                        <div class="row">
+                            <img src="placeholder_img.jpg"
+                            width="80px"
+                            style="float: left;">
+                            <p> Example description next to picture for article</p>
+                        </div>
+                        <div class="row">
+                            <img src="placeholder_img.jpg"
+                            width="80px"
+                            class="block"
+                            style="float: left;">
+                            <p> Example description next to picture for article</p>
+                        </div>
+                    </div>
+                    <div class="column" style="display: inline-block;border: 3px solid red;">
+                        <div class="row">
+                            <img src="placeholder_img.jpg"
+                            width="80px"
+                            class="block"
+                            style="float: left;">
+                            <p> Example description next to picture for article</p>
+                        </div>
+                        <div class="row">
+                            <img src="placeholder_img.jpg"
+                            width="80px"
+                            class="block"
+                            style="float: left;">
+                            <p> Example description next to picture for article</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    <!--
+    WHEN IT'S PODCAST TIME, ADD THIS SECTION AND EDIT TO ADD THE PODCAST ON MAIN PAGE:
+    <div class="container" style="border: black;">
+        <h3>Most recent podcast episode: </h3>
+        <a href="#" class="button">Pod #1: Insert Name Here</a>
+    </div>
+    -->
+
+
+</body>
+
+</html> 
