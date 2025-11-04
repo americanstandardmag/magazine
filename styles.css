@@ -1,0 +1,72 @@
+/*button styling for "American Standard" text - return to home page*/
+.homeButton
+    {
+        background-color: #fafae8;
+        border: none;
+        color: #32373b;
+        padding: 15px 32px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        font-size: 26px;
+        margin: auto;
+        display:block;
+        cursor: pointer;
+    }
+
+/*button styling for row buttons: changes with resolution of device*/
+    .button 
+    {
+        background-color: #73aede;
+        border: none;
+        color: #32373b;
+        padding: 15px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        position: relative;
+        font-size: 16px;
+        margin: auto;
+        cursor: pointer;
+    }
+
+
+/*"column" styling: how to place objects in a column*/     
+.column 
+    {
+        width: 40%;
+        padding: 5px;
+    }
+.row::after 
+    {
+        content: "";
+        clear: both;
+        display: table;
+    }  
+/*responsive layout - if resolution changes, so does column size*/  
+@media screen and (max-width: 500px) 
+    {
+        .column 
+        {
+            width: 50%;
+        }
+    }
+
+h2
+    {
+        text-align: center;
+    }
+h3
+    {
+        text-align: center;
+    }
+p
+    {
+        font-family: 'Calibri', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+body
+    {
+        background-color:#fafae8;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        
+    }
